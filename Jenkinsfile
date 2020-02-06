@@ -9,7 +9,6 @@ node
 	  }	  
    stage('Build Stage')
 	  {
-		sh 'sudo easy_install pip'
 		sh 'pip install -r requirements.txt'
 		echo "Build Successful"
 	  }
