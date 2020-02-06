@@ -5,7 +5,7 @@ node
 	  }
 	  stage('GitSCM')
 	  {
-		  git url: 'https://github.com/knagu/petclinic.git'
+		  git url: 'https://github.com/knagu/webmf-python-flask.git'
 	  }	  
    stage('Build Stage')
 	  {
