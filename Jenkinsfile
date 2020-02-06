@@ -16,5 +16,12 @@ node
 	  sh 'python test.py'
 	  echo "Tests successful"
 	  }
+	  stage('SonarQube analysis') {
+ 	 // requires SonarQube Scanner 2.8+
+  	def scannerHome = tool 'SonarScanner';
+ 	 withSonarQubeEnv('sonar') {
+    	sh "${scannerHome}/bin/sonar-scanner"
+  }
+}
    
   }
